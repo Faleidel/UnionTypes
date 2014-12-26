@@ -1,0 +1,11 @@
+This is a small experiment with a function f that can take a Bool of a list of bool is its argument.
+
+The Bool or [Bool] is obtained with a class and viewPatterns for casting of a typeable inside a pattern.
+
+The result is that you can write
+
+    main = do
+        print $ f True
+        print $ f [False,True]
+
+And everything type check.
